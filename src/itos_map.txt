@@ -1,5 +1,5 @@
 1 https://chandan-shrivastava.github.io/distributed-webpage-crawler
-2 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html
-3 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html
-4 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html
+2 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html
+3 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html
+4 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html
 5 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexf.html

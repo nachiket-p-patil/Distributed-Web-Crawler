@@ -1,8 +1,8 @@
-https://chandan-shrivastava.github.io/distributed-webpage-crawler https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html	
 https://chandan-shrivastava.github.io/distributed-webpage-crawler https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html	
 https://chandan-shrivastava.github.io/distributed-webpage-crawler https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html	
+https://chandan-shrivastava.github.io/distributed-webpage-crawler https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html	
 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html	
 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexf.html	
-https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html	
 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexf.html	
+https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html	
 https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexf.html	
