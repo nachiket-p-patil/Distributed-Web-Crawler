@@ -1,0 +1,5 @@
+https://chandan-shrivastava.github.io/distributed-webpage-crawler 0.09759201367125962
+https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexb.html 0.12524308420821856
+https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexc.html 0.17847139495193656
+https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexd.html 0.20109342699254262
+https://chandan-shrivastava.github.io/distributed-webpage-crawler/files/indexf.html 0.3976000801760424

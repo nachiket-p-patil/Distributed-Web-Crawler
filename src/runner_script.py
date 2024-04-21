@@ -50,9 +50,30 @@ for d in range(depth):
     run_hadoop("/input_1", f"/output_{d}", "mapper_2.py", "reducer_3.py")
 run_command(f"hdfs dfs -cat /output_*/p* > main_out.txt")
 run_command(f"hdfs dfs -rm -r {input_dir}")
-run_command(f"{pyth} graph.py")
+run_command(f"{pyth} graph.py > ./result.txt")
 
+page_rank_preprocessor = "page_rank_preprocessor.py"
+iter=20
+page_rank_input_file = "page_rank_input.txt"
+run_command(f"{pyth} {page_rank_preprocessor} main_out.txt {page_rank_input_file}")
 
-# run_command(f"python3 {os.path.join(mapper_dir, 'mapper.py')} < {input_file_local} | sort | python3 {os.path.join(reducer_dir, 'reducer.py')} ")
-# run_command(f"hadoop jar {jar_file} -input {os.path.join(input_dir, input_name)} -output {output_dir} -mapper 'python3 {os.path.join(mapper_dir, 'mapper.py')}' -reducer 'python3 {os.path.join(reducer_dir, 'reducer.py')}' -file {os.path.join(mapper_dir, 'mapper.py')} -file {os.path.join(reducer_dir, 'reducer.py')}")
-# run_command(f"hdfs dfs -cat {os.path.join(output_dir, 'part-00000')}")
+page_rank_inp_dir = "/page_rank_inp"
+page_rank_out_dir = "/page_rank_out"
+
+run_command(f"hdfs dfs -rm -r {page_rank_inp_dir}")
+run_command(f"hdfs dfs -rm -r {page_rank_out_dir}")
+run_command(f"hdfs dfs -mkdir -p {page_rank_inp_dir}")
+run_command(f"hdfs dfs -copyFromLocal ./{page_rank_input_file} {page_rank_inp_dir}/")
+
+for i in range(iter):
+    run_command(f"hdfs dfs -rm -r {page_rank_out_dir}")
+    run_hadoop(page_rank_inp_dir, page_rank_out_dir, "page_rank_mapper.py", "page_rank_reducer.py")
+    run_command(f"hdfs dfs -rm -r {page_rank_inp_dir}")
+    # move the contents of OUT to INP
+    # create a new INP folder and copy the contents of OUT to INP
+    run_command(f"hdfs dfs -mkdir -p {page_rank_inp_dir}")
+    run_command(f"hdfs dfs -cp {page_rank_out_dir}/* {page_rank_inp_dir}/")
+    
+run_command(f"hdfs dfs -cat {page_rank_out_dir}/* > page_rank_out.txt")
+run_command(f"{pyth} page_rank_parser.py > page_rank_result.txt")
+

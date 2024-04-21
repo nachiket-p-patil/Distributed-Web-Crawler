@@ -12,5 +12,5 @@
     ``` ./runner_script.py --path_to_HadoopStreamingJar-- --path_to_InputFile-- --input_Directory-- --path_to_MapperDirectory-- --path_to_ReducerDirectory--```
 
     ```./runner_script.py``` also works if you don't want to give these parameters
-
-+ We get the graph in `network.png` file amd page rank graph in `pagerank.png`
++ We get the graph in `network.png`.
++ The outputs are in `main_out.txt`, `result.txt`, and `page_rank_result.txt`.

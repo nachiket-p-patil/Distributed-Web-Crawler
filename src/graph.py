@@ -4,7 +4,7 @@ import networkx as nx
 url_to_ind = {}
 ind_to_url = []
 edges = []
-ind = 0
+ind = 1
 with open("./main_out.txt") as f:
   for line in f.readlines():
     a,b = line.strip().split()
@@ -31,21 +31,3 @@ plt.figure(figsize =(9, 9))
 nx.draw_networkx(G, node_color ='green')
 # nx.draw_circular(G, node_color ='green')
 plt.savefig("./network.png")
-
-plt.figure(figsize =(9, 9))
-
-try:
-  pr = nx.pagerank(G, alpha=1, max_iter=100)
-  # print(sum(pr.values()))
-  print("Probabilities of pagerank algorithm")
-  print(pr)
-except:
-  print("pagerank did not converge in given no. of iterations")
-  pass
-nx.draw_networkx(G,node_size= [i* 1500 for i in list(pr.values())],node_color ='green' )
-plt.savefig("./pagerank.png")
-
-
-
-for url,ind in url_to_ind.items():
-    print(ind, url)
